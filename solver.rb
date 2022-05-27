@@ -1,7 +1,6 @@
 class Solver
   def factorial(n)
     raise 'cannot factorialize a negative number' unless n >= 0
-
     if n.zero?
       1
     else
@@ -18,5 +17,9 @@ class Solver
     else
       number
     end
+  end
+
+  def reverse(string)
+    return string.reverse
   end
 end

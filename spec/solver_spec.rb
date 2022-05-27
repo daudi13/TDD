@@ -28,6 +28,7 @@ describe Solver do
     end
 
     it "Test the string can be reversed" do
-      expect(calc.reverse('hello')). to equal 'olleh'
+      expect(calc.reverse('hello')). to eq 'olleh'
+    end
   end
 end
