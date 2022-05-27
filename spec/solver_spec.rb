@@ -5,4 +5,8 @@ describe Solver do
     it "should perform the factorial of any number between 0 and a positive number" do
       expect(calc.factorial(5)).to eq 120
     end
+        
+    it "should return 1 when 0 is factorized" do 
+      expect(calc.factorial(0)).to eq 1
+    end
 end
