@@ -27,6 +27,10 @@ describe Solver do
       expect(calc.fizzbuzz(4)).to eq 4
     end
 
+    it 'Should return fizz if number is divisible by 3' do
+      expect(calc.fizzbuzz(6)).to eq 'fizz'
+    end
+
     it 'Test the string can be reversed' do
       expect(calc.reverse('hello')).to eq 'olleh'
     end
