@@ -25,4 +25,11 @@ describe Solver do
     it "should return fizz when number is divisible by 3" do
       expect(calc.fizzbuzz(9)).to eq "fizz"
     end
+
+    it "should return buzz when number is divisble by 5" do
+      expect(calc.fizzbuzz(10)).to eq "buzz"
+    end
+
+    it "should return fizzbuzz when number is divisible by both 5 and 3" do
+      expect(calc.fizzbuzz(15)).to eq "fizzbuzz"
 end
