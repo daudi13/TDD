@@ -32,4 +32,10 @@ describe Solver do
 
     it "should return fizzbuzz when number is divisible by both 5 and 3" do
       expect(calc.fizzbuzz(15)).to eq "fizzbuzz"
+    end
+
+    it "should return exact number passed if not divisible by 3 and 9" do
+      expect(calc.fizzbuzz(4)).to eq 4
+    end
+  end
 end
