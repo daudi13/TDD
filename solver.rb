@@ -15,6 +15,10 @@ class Solver
 
     elsif (number % 5).zero?
       'buzz'
+
+    elsif (number % 3).zero?
+      'fizz'  
+      
     else
       number
     end
