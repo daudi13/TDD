@@ -14,11 +14,15 @@ describe Solver do
       expect(calc.factorial(-1)).to raise_error("cannot factorialize a negative number")
     end
 
-    it "should return a reveresed string" do 
-      expect(calc.reveres("come")).to eq "emoc"
+    it "should return a reversed string" do 
+      expect(calc.reverse("come")).to eq "emoc"
     end
 
     it "should return an error when empty string is passes" do
       expect(calc.reverse(" ")). to raise_error("cannot reverse empty string")
+    end
+
+    it "should return fizz when number is divisible by 3" do
+      expect(calc.fizzbuzz(9)).to eq "fizz"
     end
 end
