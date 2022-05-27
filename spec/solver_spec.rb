@@ -26,5 +26,8 @@ describe Solver do
     it 'should return exact number passed if not divisible by 3 and 9' do
       expect(calc.fizzbuzz(4)).to eq 4
     end
+
+    it "Test the string can be reversed" do
+      expect(calc.reverse('hello')). to equal 'olleh'
   end
 end
