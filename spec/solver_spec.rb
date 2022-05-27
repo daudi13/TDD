@@ -13,4 +13,12 @@ describe Solver do
     it "should return an error when a negative number id factorized" do 
       expect(calc.factorial(-1)).to raise_error("cannot factorialize a negative number")
     end
+
+    it "should return a reveresed string" do 
+      expect(calc.reveres("come")).to eq "emoc"
+    end
+
+    it "should return an error when empty string is passes" do
+      expect(calc.reverse(" ")). to raise_error("cannot reverse empty string")
+    end
 end
