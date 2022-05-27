@@ -1,21 +1,22 @@
 class Solver
   def factorial(n)
-      #raise("cannot factorialize a negative number") unless n>=0
-      if (n==0)
-        return 1
-      else
-        return n*factorial(n-1)
-     end
+    raise 'cannot factorialize a negative number' unless n >= 0
+
+    if n.zero?
+      1
+    else
+      n * factorial(n - 1)
+    end
   end
 
   def fizzbuzz(number)
-    if(number%5==0 && number%3==0)
-      return "fizzbuzz"
-    
-    elsif (number%5==0)
-      return "buzz"
+    if (number % 5).zero? && (number % 3).zero?
+      'fizzbuzz'
+
+    elsif (number % 5).zero?
+      'buzz'
     else
-      return number
+      number
     end
   end
 end
