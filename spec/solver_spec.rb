@@ -27,8 +27,8 @@ describe Solver do
       expect(calc.fizzbuzz(4)).to eq 4
     end
 
-    it "Test the string can be reversed" do
-      expect(calc.reverse('hello')). to eq 'olleh'
+    it 'Test the string can be reversed' do
+      expect(calc.reverse('hello')).to eq 'olleh'
     end
   end
 end
