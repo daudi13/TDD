@@ -17,8 +17,8 @@ class Solver
       'buzz'
 
     elsif (number % 3).zero?
-      'fizz'  
-      
+      'fizz'
+
     else
       number
     end
